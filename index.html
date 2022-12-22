@@ -34,6 +34,8 @@
       width: 100%;
       height: 100vh;
       background-color: var(--Light-Gray);
+      /* background-color: transparent; */
+
     }
 
     .card-main {
@@ -42,13 +44,18 @@
       max-width: 360px;
       display: grid;
       border-radius: 9px;
-      overflow: hidden;
+      /* overflow: hidden; */
 
     }
 
     .card-community {
       background-color: white;
       padding: 6%;
+      box-shadow: 0 5px 17px 8px lightgray;
+      border-top-left-radius: 9px;
+      border-top-right-radius: 9px;
+
+
     }
 
     .card-community h1 {
@@ -60,7 +67,7 @@
     .card-community .moneyBack {
       color: var(--Bright-Yellow);
       font-weight: 700;
-      
+
     }
 
     .card-community p {
@@ -74,40 +81,47 @@
       overflow: hidden;
 
     }
-    .card-subscription .price{
+
+    .card-subscription .price {
       font-size: 2.1rem;
       color: var(--Light-Gray);
       font-weight: 700;
-      
+
     }
-    .card-subscription span.period
-    {
+
+    .card-subscription span.period {
       color: hsl(183, 71%, 71%);
 
     }
+
     .card-subscription a {
       display: block;
       width: 100%;
       height: 25%;
-      padding: 6% 0;
+      padding: 9%;
       color: var(--Light-Gray);
       text-align: center;
       text-decoration: none;
       border-radius: 5.5px;
       background-color: var(--Bright-Yellow);
+      font-weight: 700;
+      box-shadow: 0px 5px 7px 8px #27a19a;
+
     }
 
     .card-chooseUs {
       padding: 6%;
       background-color: var(--Light-Cyan);
       color: var(--Light-Gray);
-
+      border-bottom-left-radius: 9px;
+      border-bottom-right-radius: 9px;
     }
-    .card-chooseUs ul{
-    list-style: none;
-    padding-left: 0;
-    color: #a3f4f5;
-    font-size: 1rem;
+
+    .card-chooseUs ul {
+      list-style: none;
+      padding-left: 0;
+      color: #a3f4f5;
+      font-size: 1rem;
 
     }
 
@@ -119,63 +133,67 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
-    @media screen and (min-width:660px)
-    {
+
+    @media screen and (min-width:660px) {
 
       .card-main {
-      width: 50%;
-      max-width: 775px;
-      min-width: 628px;
-      display: grid;
-      grid-template-columns: 50% auto;
+        width: 50%;
+        max-width: 775px;
+        min-width: 628px;
+        display: grid;
+        grid-template-columns: 50% auto;
 
-    }
+      }
 
-    .card-community {
-      grid-column-start: 1;
-      grid-column-end: 3;
-      padding-top: 4.7%;
-    }
+      .card-community {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding-top: 4.7%;
+      }
 
-    .card-community h1 {
-      font-size: 1.7rem;
+      .card-community h1 {
+        font-size: 1.7rem;
 
-    }
+      }
 
-    .card-community .moneyBack {
-      font-size: 1.34rem;
+      .card-community .moneyBack {
+        font-size: 1.34rem;
 
-    }
+      }
 
-    .card-community p {
-      font-size: 1.2rem;
-    }
+      .card-community p {
+        font-size: 1.2rem;
+      }
 
-    .card-subscription {
+      .card-subscription {
 
-      padding: 12%;
-      padding-top: 9%;
+        padding: 12%;
+        padding-top: 9%;
+        border-bottom-left-radius: 9px;
 
-    }
-    .card-subscription .price{
-      font-size: 2.1rem;
+      }
 
-    }
+      .card-subscription .price {
+        font-size: 2.1rem;
+
+      }
 
 
-    .card-chooseUs {
+      .card-chooseUs {
 
-      padding: 12%;
-      padding-top: 9%;
+        padding: 12%;
+        padding-top: 9%;
+        border-bottom-left-radius: unset;
 
-    }
-    .card-chooseUs ul{
-    list-style: none;
-    padding-left: 0;
-    color: #a3f4f5;
-    font-size: 1rem;
+      }
 
-    }
+      .card-chooseUs ul {
+        list-style: none;
+        padding-left: 0;
+        color: #a3f4f5;
+        font-size: 1rem;
+
+      }
 
     }
   </style>
@@ -195,7 +213,7 @@
       <h2>
         Monthly Subscription
       </h2>
-      <p><span class="price">&dollar;29</span ><span class="period"> per month</span></p>
+      <p><span class="price">&dollar;29</span><span class="period"> per month</span></p>
       <p>
         Full access for less than &dollar;1 a day
       </p>
