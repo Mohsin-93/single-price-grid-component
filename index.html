@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+      --Cyan: hsl(179, 62%, 43%);
+      --Light-Cyan: hsl(179, 47%, 52%);
+      --Bright-Yellow: hsl(71, 73%, 54%);
+      --Light-Gray: hsl(204, 43%, 93%);
+      --Grayish-Blue: hsl(218, 22%, 67%);
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Karla', sans-serif;
+    }
+
+    html,
+    body {
+      display: flex;
+      align-content: center;
+      width: 100%;
+      height: 100vh;
+      background-color: var(--Light-Gray);
+    }
+
+    .card-main {
+      margin: auto;
+      width: 90%;
+      max-width: 360px;
+      display: grid;
+      border-radius: 9px;
+      overflow: hidden;
+
+    }
+
+    .card-community {
+      background-color: white;
+      padding: 6%;
+    }
+
+    .card-community h1 {
+      color: var(--Cyan);
+      font-size: 1.45rem;
+
+    }
+
+    .card-community .moneyBack {
+      color: var(--Bright-Yellow);
+      font-weight: 700;
+      
+    }
+
+    .card-community p {
+      color: var(--Grayish-Blue);
+    }
+
+    .card-subscription {
+      background-color: var(--Cyan);
+      color: var(--Light-Gray);
+      padding: 6%;
+      overflow: hidden;
+
+    }
+    .card-subscription .price{
+      font-size: 2.1rem;
+      color: var(--Light-Gray);
+      font-weight: 700;
+      
+    }
+    .card-subscription span.period
+    {
+      color: hsl(183, 71%, 71%);
+
+    }
+    .card-subscription a {
+      display: block;
+      width: 100%;
+      height: 25%;
+      padding: 6% 0;
+      color: var(--Light-Gray);
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5.5px;
+      background-color: var(--Bright-Yellow);
+    }
+
+    .card-chooseUs {
+      padding: 6%;
+      background-color: var(--Light-Cyan);
+      color: var(--Light-Gray);
+
+    }
+    .card-chooseUs ul{
+    list-style: none;
+    padding-left: 0;
+    color: #a3f4f5;
+    font-size: 1rem;
+
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+    @media screen and (min-width:660px)
+    {
+
+      .card-main {
+      width: 50%;
+      max-width: 775px;
+      min-width: 628px;
+      display: grid;
+      grid-template-columns: 50% auto;
+
+    }
+
+    .card-community {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      padding-top: 4.7%;
+    }
+
+    .card-community h1 {
+      font-size: 1.7rem;
+
+    }
+
+    .card-community .moneyBack {
+      font-size: 1.34rem;
+
+    }
+
+    .card-community p {
+      font-size: 1.2rem;
+    }
+
+    .card-subscription {
+
+      padding: 12%;
+      padding-top: 9%;
+
+    }
+    .card-subscription .price{
+      font-size: 2.1rem;
+
+    }
+
+
+    .card-chooseUs {
+
+      padding: 12%;
+      padding-top: 9%;
+
+    }
+    .card-chooseUs ul{
+    list-style: none;
+    padding-left: 0;
+    color: #a3f4f5;
+    font-size: 1rem;
+
+    }
+
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card-main">
+    <div class="card-community">
+      <h1>Join our community</h1>
+      <p class="moneyBack"> 30-day, hassle-free money back guarantee
+      </p>
+      <p> Gain access to our full library of tutorials along with expert code reviews.
+        Perfect for any developers who are serious about honing their skills.
+      </p>
+    </div>
+    <div class="card-subscription">
+      <h2>
+        Monthly Subscription
+      </h2>
+      <p><span class="price">&dollar;29</span ><span class="period"> per month</span></p>
+      <p>
+        Full access for less than &dollar;1 a day
+      </p>
+      <a href="#">Sign Up</a>
+    </div>
+    <div class="card-chooseUs">
+      <h2>Why Us</h2>
+      <ul>
+        <li>Tutorials by industry experts</li>
+        <li>Peer &amp; expert code review</li>
+        <li>Coding exercises</li>
+        <li>Access to our GitHub repos</li>
+        <li>Community forum</li>
+        <li>Flashcard decks</li>
+        <li>New videos every week</li>
+      </ul>
+    </div>
+  </main>
+</body>
+
+</html>
