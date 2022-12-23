@@ -30,7 +30,8 @@
     html,
     body {
       display: flex;
-      align-content: center;
+      align-items: center;
+      justify-content: center;
       width: 100%;
       height: 100vh;
       background-color: var(--Light-Gray);
@@ -39,7 +40,7 @@
     }
 
     .card-main {
-      margin: auto;
+      /* margin: auto; */
       width: 90%;
       max-width: 360px;
       display: grid;
@@ -50,7 +51,7 @@
 
     .card-community {
       background-color: white;
-      padding: 6%;
+      padding: 1.12rem;
       box-shadow: 0 5px 17px 8px lightgray;
       border-top-left-radius: 9px;
       border-top-right-radius: 9px;
@@ -60,7 +61,8 @@
 
     .card-community h1 {
       color: var(--Cyan);
-      font-size: 1.45rem;
+      /* font-size: 1.45rem; */
+      font-size: 1.2rem;
 
     }
 
@@ -77,21 +79,26 @@
     .card-subscription {
       background-color: var(--Cyan);
       color: var(--Light-Gray);
-      padding: 6%;
+      padding: 1.12rem;
       overflow: hidden;
+
+    }
+
+    .card-subscription h2 {
+      font-size: 1.2rem;
 
     }
 
     .card-subscription .price {
       font-size: 2.1rem;
       color: var(--Light-Gray);
-      font-weight: 700;
+      font-weight: 400;
 
     }
 
     .card-subscription span.period {
       color: hsl(183, 71%, 71%);
-
+            padding-bottom: 1.2rem;
     }
 
     .card-subscription a {
@@ -110,19 +117,24 @@
     }
 
     .card-chooseUs {
-      padding: 6%;
+      padding: 1.12rem;
       background-color: var(--Light-Cyan);
       color: var(--Light-Gray);
       border-bottom-left-radius: 9px;
       border-bottom-right-radius: 9px;
     }
 
+    .card-chooseUs h2 {
+      font-size: 1.2rem;
+
+    }
+
     .card-chooseUs ul {
       list-style: none;
       padding-left: 0;
       color: #a3f4f5;
-      font-size: 1rem;
-
+      font-size: .89rem;
+line-height: 1.3;
     }
 
     .attribution {
@@ -138,8 +150,8 @@
 
       .card-main {
         width: 50%;
-        max-width: 775px;
-        min-width: 628px;
+        min-width: 610px;
+        max-width: 612px;
         display: grid;
         grid-template-columns: 50% auto;
 
@@ -148,42 +160,60 @@
       .card-community {
         grid-column-start: 1;
         grid-column-end: 3;
-        padding-top: 4.7%;
+        /* padding-top: 4.7%; */
+        padding-top: 1.85rem;
       }
 
       .card-community h1 {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
 
       }
 
       .card-community .moneyBack {
-        font-size: 1.34rem;
+        font-size: 1.11rem;
 
       }
 
       .card-community p {
-        font-size: 1.2rem;
+        font-size: .96rem;
       }
 
       .card-subscription {
 
-        padding: 12%;
-        padding-top: 9%;
+        padding: 2.24rem;
+        /* padding: 12%; */
+        /* padding-top: 9%; */
+        padding-top: 1.68rem;
+
         border-bottom-left-radius: 9px;
 
       }
 
-      .card-subscription .price {
-        font-size: 2.1rem;
+      .card-subscription h2 {
+        font-size: 1.11rem;
 
       }
 
+      .card-subscription .price {
+        font-size: 1.8rem;
+
+      }
+
+      .card-subscription p {
+        font-size: .89rem;
+      }
 
       .card-chooseUs {
 
-        padding: 12%;
-        padding-top: 9%;
+        padding: 2.24rem;
+        padding-top: 1.68rem;
+
         border-bottom-left-radius: unset;
+
+      }
+
+      .card-chooseUs h2 {
+        font-size: 1.11rem;
 
       }
 
@@ -191,7 +221,6 @@
         list-style: none;
         padding-left: 0;
         color: #a3f4f5;
-        font-size: 1rem;
 
       }
 
